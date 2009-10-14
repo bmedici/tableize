@@ -1,0 +1,25 @@
+Tableize
+=============
+
+This plugin is used to handle table ordering, indexing or searching.
+
+
+Example
+=======
+
+app/models/sortable.rb
+
+class Sortable < ActiveRecord::Base
+
+sortable_with :i, 'id'
+sortable_with :n, 'Name'
+sortable_with :z, 'zip'
+sortable_with :a, 'age'
+default_order :XXX
+
+end
+
+
+
+
+Copyright (c) 2009 Bruno Medici, released under the MIT license
